@@ -3,3 +3,4 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/7551901b394d73c5be6e/maintainability)](https://codeclimate.com/github/AlexanderPotapkov/python-project-lvl1/maintainability)
 <a href="https://asciinema.org/a/463343" target="_blank"><img src="https://asciinema.org/a/463343.svg" /></a>
 <a href="https://asciinema.org/a/463356" target="_blank"><img src="https://asciinema.org/a/463356.svg" /></a>
+<a href="https://asciinema.org/a/463406" target="_blank"><img src="https://asciinema.org/a/463406.svg" /></a>
