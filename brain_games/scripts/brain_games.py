@@ -1,12 +1,18 @@
 #!/usr/bin/env python
 
-"""This script calls the function welcome_user() from cli.py."""
+"""This script start the 'Brain-games'."""
 
 from brain_games import cli
 
 
 def main():
-    """Return func welcome_user."""
+    """
+    Program run.
+
+    Parameters are missing.
+
+    Returns: None
+    """
     cli.welcome_user()
 
 

@@ -16,21 +16,20 @@ def welcome_user(game):
     """
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    if name:
-        print('Hello, {0}!'.format(name))
-        print(game.GAME_RULE)
+    print('Hello, {0}!'.format(name))
+    print(game.GAME_RULE)
 
-        for _ in range(NUMBER_OF_ROUNDS):
-            question, correct_answer = game.get_question_and_solution()
-            print('Question: {0}'.format(question))
-            answer_user = prompt.string('Your answer: ')
-            if answer_user == correct_answer:
-                print('Correct!')
-                continue
-            game_over(answer_user, correct_answer, name)
-            break
-        else:
-            print('Congartulations, {0}!'.format(name))
+    for _ in range(NUMBER_OF_ROUNDS):
+        question, correct_answer = game.get_question_and_solution()
+        print('Question: {0}'.format(question))
+        answer_user = prompt.string('Your answer: ')
+        if answer_user == correct_answer:
+            print('Correct!')
+            continue
+        game_over(answer_user, correct_answer, name)
+        break
+    else:
+        print('Congartulations, {0}!'.format(name))
 
 
 def game_over(answer_user, correct_answer, name):

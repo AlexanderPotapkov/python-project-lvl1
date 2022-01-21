@@ -1,12 +1,14 @@
 """Function of the game 'Brain-calc'."""
 
-from random import randint, choice
-from operator import add, sub, mul
+from operator import add, mul, sub
+from random import choice, randint
 
 GAME_RULE = 'What is the result of the expression?'
-OPERATIONS = (('+', add),
-              ('-', sub),
-              ('*', mul),)
+OPERATIONS = (
+    ('+', add),
+    ('-', sub),
+    ('*', mul),
+)
 
 
 def get_question_and_solution():
@@ -18,11 +20,11 @@ def get_question_and_solution():
     Returns:
         tuple: str
     """
-    number_0 = randint(1, 10)
-    number_1 = randint(1, 10)
+    number0 = randint(1, 10)
+    number1 = randint(1, 10)
     random_operation = choice(OPERATIONS)
 
-    correct_answer = random_operation[1](number_0, number_1)
-    question = '{0} {1} {2}'.format(number_0, random_operation[0], number_1)
+    correct_answer = random_operation[1](number0, number1)
+    question = '{0} {1} {2}'.format(number0, random_operation[0], number1)
 
     return question, str(correct_answer)

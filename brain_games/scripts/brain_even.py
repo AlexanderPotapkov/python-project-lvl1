@@ -1,13 +1,19 @@
 #!/usr/bin/env python
 
-"""The scripts start the game 'Brain-even'."""
+"""This script start the game 'Brain-even'."""
 
 from brain_games.engine import welcome_user
 from brain_games.games import even_number
 
 
 def main():
-    """Program start."""
+    """
+    Program run.
+
+    Parameters are missing.
+
+    Returns: None
+    """
     welcome_user(even_number)
 
 
