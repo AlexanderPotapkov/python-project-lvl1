@@ -5,7 +5,7 @@ from random import choice, randint
 GAME_RULE = 'What number is missing in the progression?'
 
 
-def get_question_and_solution():
+def get_arithmetic_progression():
     """
     Get arithmetic progression (question) and correct answer.
 
