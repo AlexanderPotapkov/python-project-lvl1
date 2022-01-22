@@ -5,7 +5,7 @@ from random import randint
 GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def get_question_and_solution():
+def is_even():
     """
     Get an question and correct answer.
 
