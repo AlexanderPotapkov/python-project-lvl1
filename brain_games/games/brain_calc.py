@@ -11,7 +11,7 @@ OPERATIONS = (
 )
 
 
-def get_question_and_solution():
+def get_calc():
     """
     Get math expression (question) and correct answer.
 
