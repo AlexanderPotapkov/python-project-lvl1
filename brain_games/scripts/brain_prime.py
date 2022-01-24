@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-"""This script start the game 'Brain-even'."""
+"""This script start the game 'Brain-prime'."""
 
 from brain_games.engine import welcome_user
-from brain_games.games import even
+from brain_games.games import prime
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
 
     Returns: None
     """
-    welcome_user(even)
+    welcome_user(prime)
 
 
 if __name__ == '__main__':
