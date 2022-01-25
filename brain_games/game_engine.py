@@ -9,7 +9,7 @@ def welcome_user(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, {0}!'.format(name))
-    print(game.RULES_OF_THE_GAME)
+    print(game.GAME_RULE)
 
     for _ in range(NUMBER_OF_ROUNDS):
         question, correct_answer = game.get_question_and_solution()
