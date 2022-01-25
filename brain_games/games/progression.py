@@ -2,7 +2,7 @@
 
 from random import choice, randint
 
-RULES_OF_THE_GAME = 'What number is missing in the progression?'
+GAME_RULE = 'What number is missing in the progression?'
 
 
 def get_question_and_solution():
