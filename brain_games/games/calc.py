@@ -3,7 +3,7 @@
 from operator import add, mul, sub
 from random import choice, randint
 
-RULES_OF_THE_GAME = 'What is the result of the expression?'
+GAME_RULE = 'What is the result of the expression?'
 OPERATIONS = (
     ('+', add),
     ('-', sub),
