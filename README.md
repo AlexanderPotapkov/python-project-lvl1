@@ -19,7 +19,7 @@
 <a href="https://asciinema.org/a/463343" target="_blank"><img src="https://asciinema.org/a/463343.svg" /></a>
 
 ### "Калькулятор" 
-<a href="https://asciinema.org/a/463356" target="_blank"><img src="https://asciinema.org/a/463356.svg" /></a>
+<a href="https://asciinema.org/a/463356" target="_blank"><img src="https://asciinema.org/a/463356.svg" /></a>
 
 ### "НОД" 
 <a href="https://asciinema.org/a/463406" target="_blank"><img src="https://asciinema.org/a/463406.svg" /></a>
