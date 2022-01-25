@@ -25,5 +25,6 @@ def welcome_user(game):
 
 
 def game_over(answer_user, correct_answer, name):
-    print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(answer_user, correct_answer))
+    print("'{0}' is wrong answer ;(. Correct answer was '{1}'.".format(
+        answer_user, correct_answer))
     print("Let's try again, {0}!".format(name))
