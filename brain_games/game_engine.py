@@ -21,7 +21,7 @@ def welcome_user(game):
         game_over(answer_user, correct_answer, name)
         break
     else:
-        print('Congartulations, {0}!'.format(name))
+        print('Congratulations, {0}!'.format(name))
 
 
 def game_over(answer_user, correct_answer, name):
