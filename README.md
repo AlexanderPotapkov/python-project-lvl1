@@ -15,6 +15,9 @@
 ### Игра: "Простое ли число?"
 ### Пользователю показывается случайное число. Игрок должен определить является ли число простым.
 
+### "Проверка на чётность"
+<a href="https://asciinema.org/a/463343" target="_blank"><img src="https://asciinema.org/a/463343.svg" /></a>
+
 ### "Калькулятор" 
 <a href="https://asciinema.org/a/463356" target="_blank"><img src="https://asciinema.org/a/463356.svg" /></a>
 
