@@ -2,19 +2,12 @@
 
 from random import randint
 
-GAME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES_OF_THE_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 first_prime_number = 2
 
 
 def is_prime(question):
-    """
-    Get number (question) and correct answer.
-
-    Parameters are missing.
-
-    Returns: Bool
-    """
     if question < first_prime_number:
         return False
     for i in range(first_prime_number, question // 2 + 1):

@@ -1,24 +1,22 @@
 """Function of the game 'Brain-gcd'."""
 
-from math import gcd
 from random import randint
 
-GAME_RULE = 'Find the greatest common divisor of given numbers.'
+RULES_OF_THE_GAME = 'Find the greatest common divisor of given numbers.'
+
+
+def gcd(number_0, number_1):
+    while number_0 != 0 and number_1 != 0:
+        if number_0 > number_1:
+            number_0 %= number_1
+        else:
+            number_1 %= number_0
+    return number_0 + number_1
 
 
 def get_question_and_solution():
-    """
-    Get 2 numbers (question) and correct answer (gcd).
-
-    Parameters are missing.
-
-    Returns:
-        tuple: str
-    """
-    number0 = randint(1, 100)
-    number1 = randint(1, 100)
-
-    correct_answer = gcd(number0, number1)
-    question = '{0} {1}'.format(number0, number1)
-
-    return question, str(correct_answer)
+    number_0 = randint(1, 100)
+    number_1 = randint(1, 100)
+    correct_answer = gcd(number_0, number_1)
+    question = '{0} {1}'.format(number_0, number_1)
+    return str(question), str(correct_answer)

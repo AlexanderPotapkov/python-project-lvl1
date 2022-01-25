@@ -2,18 +2,10 @@
 
 from random import choice, randint
 
-GAME_RULE = 'What number is missing in the progression?'
+RULES_OF_THE_GAME = 'What number is missing in the progression?'
 
 
 def get_question_and_solution():
-    """
-    Get arithmetic progression (question) and correct answer.
-
-    Parameters are missing.
-
-    Returns:
-        tuple: str, int
-    """
     start = randint(1, 10)
     stop = randint(60, 100)
     step = randint(1, 6)

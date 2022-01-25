@@ -3,7 +3,7 @@
 from operator import add, mul, sub
 from random import choice, randint
 
-GAME_RULE = 'What is the result of the expression?'
+RULES_OF_THE_GAME = 'What is the result of the expression?'
 OPERATIONS = (
     ('+', add),
     ('-', sub),
@@ -12,14 +12,6 @@ OPERATIONS = (
 
 
 def get_question_and_solution():
-    """
-    Get math expression (question) and correct answer.
-
-    Parameters are missing.
-
-    Returns:
-        tuple: str
-    """
     number0 = randint(1, 10)
     number1 = randint(1, 10)
     random_operation = choice(OPERATIONS)
