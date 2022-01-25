@@ -2,7 +2,7 @@
 
 from random import randint
 
-RULES_OF_THE_GAME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+GAME_RULE = 'Answer "yes" if gives number is prime. Otherwise answer "no".'
 
 first_prime_number = 2
 
