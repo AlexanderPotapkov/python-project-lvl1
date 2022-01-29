@@ -4,11 +4,11 @@
 
 Игроку доступно 5 игр. Для запуска необходимо установить приложение (make package-install), написать название и следовать инструкциям.
 
-Игра-1: "Проверка на чётность" (brain-even)
-Игра-2: "Калькулятор" (brain-calc)
-Игра-3: "НОД" (brain-gcd)
-Игра-4: "Арифметическая прогрессия" (brain-progression)
-Игра-5: "Простое ли число?" (brain-prime)
+1. Игра: "Проверка на чётность" (brain-even)
+2. Игра: "Калькулятор" (brain-calc)
+3. Игра: "НОД" (brain-gcd)
+4. Игра: "Арифметическая прогрессия" (brain-progression)
+5. Игра: "Простое ли число?" (brain-prime)
 
 ### brain-even
 <a href="https://asciinema.org/a/463343" target="_blank"><img src="https://asciinema.org/a/463343.svg" /></a>
