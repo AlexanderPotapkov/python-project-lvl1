@@ -23,5 +23,5 @@ def welcome_user(game):
                 answer_user, correct_answer))
             print("Let's try again, {0}!".format(name))
             break
-        else:
-            print('Congratulations, {0}!'.format(name))
+    else:
+        print('Congratulations, {0}!'.format(name))
