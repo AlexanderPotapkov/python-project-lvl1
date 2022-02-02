@@ -4,6 +4,8 @@ from operator import add, mul, sub
 from random import choice, randint
 
 GAME_RULE = 'What is the result of the expression?'
+FIRST_NUMBER = randint(1, 10)
+SECOND_NUMBER = randint(1, 10)
 OPERATIONS = (
     ('+', add),
     ('-', sub),
@@ -12,11 +14,9 @@ OPERATIONS = (
 
 
 def get_question_and_solution():
-    number0 = randint(1, 10)
-    number1 = randint(1, 10)
-    random_operation = choice(OPERATIONS)
+    operation_sign, operation = choice(OPERATIONS)
 
-    correct_answer = random_operation[1](number0, number1)
-    question = '{0} {1} {2}'.format(number0, random_operation[0], number1)
+    correct_answer = operation(FIRST_NUMBER, SECOND_NUMBER)
+    question = '{0} {1} {2}'.format(FIRST_NUMBER, operation_sign, SECOND_NUMBER)
 
     return question, str(correct_answer)
