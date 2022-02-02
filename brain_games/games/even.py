@@ -3,6 +3,8 @@
 from random import randint
 
 GAME_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
 def is_even(question):
@@ -10,6 +12,6 @@ def is_even(question):
 
 
 def get_question_and_solution():
-    question = randint(1, 100)
-    correct_answer = 'yes' if is_even(question) is True else 'no'
-    return question, correct_answer
+    question = randint(MIN_NUMBER, MAX_NUMBER)
+    correct_answer = 'yes' if is_even(question) else 'no'
+    return str(question), str(correct_answer)
