@@ -3,10 +3,10 @@
 from random import choice, randint
 
 GAME_RULE = 'What number is missing in the progression?'
-MIN_TERM_OF_ARITHMETIC_PROGRESSION = 1
+MIN_TERM_OF_ARITHMETIC_PROGRESSION = 50
 MAX_TERM_OF_ARITHMETIC_PROGRESSION = 100
 MIN_DIFFERENCE = 1
-MAX_DIFFERENCE = 10
+MAX_DIFFERENCE = 5
 
 
 def get_arithmetic_progression(term_of_progression, difference):
