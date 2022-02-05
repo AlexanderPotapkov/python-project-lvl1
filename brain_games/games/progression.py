@@ -7,25 +7,41 @@ MIN_TERM_OF_ARITHMETIC_PROGRESSION = 50
 MAX_TERM_OF_ARITHMETIC_PROGRESSION = 100
 MIN_DIFFERENCE = 1
 MAX_DIFFERENCE = 5
+MIN_PROGRESSION_LENGTH = 5
+MAX_PROGRESSION_LENGTH = 10
 
 
-def get_arithmetic_progression(term_of_progression, difference):
-    progression = list(range(1, term_of_progression, difference))
-    answer = choice(progression)
-    for index, sequence in enumerate(progression):
-        if sequence == answer:
-            progression[index] = '..'
+def get_arithmetic_progression(
+        initial_term,
+        common_difference,
+        progression_length):
+    progression = list(range(
+        1, initial_term, common_difference))[:progression_length]
+    return progression
+
+
+def stringify_progression(progression, hidden_term_index):
+    stringify_progression = progression
+    for index, sequence in enumerate(stringify_progression):
+        if sequence == hidden_term_index:
+            stringify_progression[index] = '..'
         else:
-            progression[index] = str(sequence)
-    return progression, answer
+            stringify_progression[index] = str(sequence)
+    return stringify_progression
 
 
 def get_question_and_solution():
-    term_of_progression = randint(
+    initial_term = randint(
         MIN_TERM_OF_ARITHMETIC_PROGRESSION,
         MAX_TERM_OF_ARITHMETIC_PROGRESSION)
-    difference = randint(MIN_DIFFERENCE, MAX_DIFFERENCE)
-    question, correct_answer = get_arithmetic_progression(
-        term_of_progression,
-        difference)
-    return ' '.join(question), str(correct_answer)
+    common_difference = randint(MIN_DIFFERENCE, MAX_DIFFERENCE)
+    progression_length = randint(
+        MIN_PROGRESSION_LENGTH,
+        MAX_PROGRESSION_LENGTH)
+    progression = get_arithmetic_progression(
+        initial_term,
+        common_difference,
+        progression_length)
+    hidden_term_index = choice(progression)
+    question = stringify_progression(progression, hidden_term_index)
+    return ' '.join(question), str(hidden_term_index)
