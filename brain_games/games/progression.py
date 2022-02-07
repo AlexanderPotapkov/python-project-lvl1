@@ -3,6 +3,8 @@
 from random import choice, randint
 
 GAME_RULE = 'What number is missing in the progression?'
+MIN_FIRST_TERM_OF_ARITHMETIC_PROGRESSION = 1
+MAX_FIRST_TERM_OF_ARITHMETIC_PROGRESSION = 5
 MIN_TERM_OF_ARITHMETIC_PROGRESSION = 50
 MAX_TERM_OF_ARITHMETIC_PROGRESSION = 100
 MIN_DIFFERENCE = 1
@@ -12,25 +14,20 @@ MAX_PROGRESSION_LENGTH = 10
 
 
 def get_arithmetic_progression(
+        first_term_of_arithmetic_progression,
         initial_term,
         common_difference,
         progression_length):
     progression = list(range(
-        1, initial_term, common_difference))[:progression_length]
+        first_term_of_arithmetic_progression,
+        initial_term, common_difference))[:progression_length]
     return progression
 
 
-def stringify_progression(progression, hidden_term_index):
-    stringify_progression = progression
-    for index, sequence in enumerate(stringify_progression):
-        if sequence == hidden_term_index:
-            stringify_progression[index] = '..'
-        else:
-            stringify_progression[index] = str(sequence)
-    return stringify_progression
-
-
 def get_question_and_solution():
+    first_term_of_arithmetic_progression = randint(
+        MIN_FIRST_TERM_OF_ARITHMETIC_PROGRESSION,
+        MAX_FIRST_TERM_OF_ARITHMETIC_PROGRESSION)
     initial_term = randint(
         MIN_TERM_OF_ARITHMETIC_PROGRESSION,
         MAX_TERM_OF_ARITHMETIC_PROGRESSION)
@@ -39,9 +36,15 @@ def get_question_and_solution():
         MIN_PROGRESSION_LENGTH,
         MAX_PROGRESSION_LENGTH)
     progression = get_arithmetic_progression(
+        first_term_of_arithmetic_progression,
         initial_term,
         common_difference,
         progression_length)
-    hidden_term_index = choice(progression)
-    question = stringify_progression(progression, hidden_term_index)
-    return ' '.join(question), str(hidden_term_index)
+    hidden_term = choice(progression)
+    question = progression
+    for index, sequence in enumerate(question):
+        if sequence == hidden_term:
+            question[index] = '..'
+        else:
+            question[index] = str(sequence)
+    return ' '.join(question), str(hidden_term)
