@@ -13,20 +13,20 @@ LENGTH_OF_PROGRESSION = 10
 def get_arithmetic_progression(
         initial_term,
         common_difference):
-    term_of_progression, progression = initial_term, [initial_term]
-    for _ in range(LENGTH_OF_PROGRESSION):
-        term_of_progression += common_difference
-        progression.append(term_of_progression)
-    return progression
+    return list(range(
+        initial_term,
+        initial_term + LENGTH_OF_PROGRESSION * common_difference,
+        common_difference))
 
 
-def stringify_progression(progression, hidden_term):
+def stringify_progression(progression):
+    hidden_term = choice(progression)
     for index, sequence in enumerate(progression):
         if sequence == hidden_term:
             progression[index] = '..'
         else:
             progression[index] = str(sequence)
-    return ' '.join(progression)
+    return ' '.join(progression), str(hidden_term)
 
 
 def get_question_and_solution():
@@ -37,8 +37,5 @@ def get_question_and_solution():
     progression = get_arithmetic_progression(
         initial_term,
         common_difference)
-    hidden_term = choice(get_arithmetic_progression(
-        initial_term,
-        common_difference))
-    question = stringify_progression(progression, hidden_term)
-    return question, str(hidden_term)
+    question, answer = stringify_progression(progression)
+    return question, answer
