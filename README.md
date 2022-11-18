@@ -1,6 +1,6 @@
 ### "Игры-Разума"
 
-[![Github Actions Status](https://github.com/AlexanderPotapkov/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AlexanderPotapkov/python-project-lvl1/actions)                     [![Github Actions Status](https://github.com/AlexanderPotapkov/python-project-lvl1/workflows/github-actions/badge.svg)](https://github.com/AlexanderPotapkov/python-project-lvl1/actions)                   [![Maintainability](https://api.codeclimate.com/v1/badges/7551901b394d73c5be6e/maintainability)](https://codeclimate.com/github/AlexanderPotapkov/python-project-lvl1/maintainability)
+[![Github Actions Status](https://github.com/AlexanderPotapkov/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AlexanderPotapkov/python-project-lvl1/actions)                     [![Github Actions Status](https://github.com/AlexanderPotapkov/python-project-lvl1/workflows/github-actions/badge.svg)](https://github.com/AlexanderPotapkov/python-project-lvl1/actions)                   [![Maintainability](https://api.codeclimate.com/v1/badges/a00cc266699e11c957f1/maintainability)](https://codeclimate.com/github/AlexanderPotapkov/python-project-lvl1/maintainability)
 
 Игроку доступно 5 игр. Для запуска необходимо установить приложение (make package-install), написать название и следовать инструкциям.
 
